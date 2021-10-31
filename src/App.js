@@ -1,13 +1,19 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
+import HomePage from './pages/homepage/homepage.component';
+import MainPage from './pages/main/main-page.component';
+import RegistrosPage from './pages/registros/registros-page.component';
 
 import './App.css';
 
-import HomePage from './pages/homepage/homepage.component';
-
 const App = () => 
-  <div className='App'>  
-    <Route path='/' component={HomePage} />
+  <div className='App'>
+    <Switch>
+      <Route exact path='/' component={HomePage} />
+      <Route path='/main' component={MainPage} />
+      <Route path='/registros' component={RegistrosPage} />
+    </Switch>
   </div>
 
 
