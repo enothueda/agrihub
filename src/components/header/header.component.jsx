@@ -5,9 +5,7 @@ import { connect} from 'react-redux'
 
 import './header.styles.scss';
 
-const Header = ({ currentUser }) => {
-    console.log('header user', currentUser)
-    return (
+const Header = ({ currentUser }) => (
     <div className='header'>
         <Link className='logo-container' to='/'>
             LOGO
@@ -35,7 +33,7 @@ const Header = ({ currentUser }) => {
         </div>
     </div>
 );
-}
+
 const mapStateToProps = state => ({
     currentUser: state.user.currentUser
 })
