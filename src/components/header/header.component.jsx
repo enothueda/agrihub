@@ -1,7 +1,9 @@
 import { auth } from '../../firebase/firebase.utils';
 import { signOut } from 'firebase/auth';
 import { Link } from 'react-router-dom';
-import { connect} from 'react-redux'
+import { connect} from 'react-redux';
+
+import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 import './header.styles.scss';
 
@@ -35,7 +37,7 @@ const Header = ({ currentUser }) => (
 );
 
 const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
+    currentUser: selectCurrentUser(state)
 })
 
 export default connect(mapStateToProps)(Header);
