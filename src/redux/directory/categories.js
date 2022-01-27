@@ -85,4 +85,4 @@ const CATEGORIES = [
     }
 ]
 
-export default CATEGORIES
+export default CATEGORIES;

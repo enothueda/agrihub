@@ -1,15 +1,23 @@
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { selectDirectorySections } from '../../redux/directory/directory.selectors';
+
 import RegistrosPreview from '../../components/registros-preview/registros-preview.component';
-import CATEGORIES from '../main/main-categories';
 
 import './registros.styles.scss';
 
-const RegistrosPage = () => (
+const RegistrosPage = ({ categories }) => (
     <div className='registros-page'>
         <h1>Pagina de Registro</h1>
         {
-            CATEGORIES.map(data => <RegistrosPreview key={data.id} {...data} />)
+            categories.map(data => <RegistrosPreview key={data.id} {...data} />)
         }
     </div>
 );
 
-export default RegistrosPage;
+const mapStateToProps = createStructuredSelector({
+    categories: selectDirectorySections
+})
+
+export default connect(mapStateToProps)(RegistrosPage);
