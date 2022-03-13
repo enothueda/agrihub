@@ -15,10 +15,7 @@ const Header = ({ currentUser }) => (
         <div className='options'>
             <Link className='option' to='/main'>
                 MAIN
-            </Link>
-            <Link className='option' to='/registros'>
-                REGISTROS
-            </Link>
+            </Link>           
             <Link className='option' to='/services'>
                 SERVICIOS
             </Link>

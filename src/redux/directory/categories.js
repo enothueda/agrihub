@@ -3,85 +3,37 @@ const CATEGORIES = [
         id: 1,
         title: 'Ranchos',
         routeName: 'ranchos',
-        imgUrl: '',
-        options: [
-            {
-                id: 1,
-                name: 'Rancho',
-                imgUrl: '',
-                register: ''
-            }
-        ]
+        imgUrl: ''
     },
     {
         id: 2,
         title: 'Inspecciones',
         routeName: 'inspecciones',
-        imgUrl: '',
-        options: [
-            {
-                id: 1,
-                name: 'Plagas y Enfermedades',
-                imgUrl: '',
-                register: ''
-            }
-        ]
+        imgUrl: ''
     },
     {
         id: 3,
         title: 'Cosecha',
         routeName: 'cosecha',
-        imgUrl: '',
-        options: [
-            {
-                id: 1,
-                name: 'Cosecha',
-                imgUrl: '',
-                register: ''
-            }
-        ]
+        imgUrl: ''
     },
     {
         id: 4,
         title: 'Aplicaciones',
         routeName: 'aplicaciones',
-        imgUrl: '',
-        options: [
-            {
-                id: 1,
-                name: 'Fertilización',
-                imgUrl: '',
-                register: ''
-            }
-        ]
+        imgUrl: ''
     },
     {
         id: 5,
         title: 'Planeación',
         routeName: 'planeacion',
-        imgUrl: '',
-        options: [
-            {
-                id: 1,
-                name: 'Estimaciones',
-                imgUrl: '',
-                register: ''
-            }
-        ]
+        imgUrl: ''
     },
     {
         id: 6,
         title: 'Inventario',
         routeName: 'inventario',
-        imgUrl: '',
-        options: [
-            {
-                id: 1,
-                name: 'Empaque',
-                imgUrl: '',
-                register: ''
-            }
-        ]
+        imgUrl: ''
     }
 ]
 

@@ -6,7 +6,6 @@ import { createStructuredSelector } from 'reselect';
 import Header from './components/header/header.component';
 import HomePage from './pages/homepage/homepage.component';
 import MainPage from './pages/main/main-page.component';
-import RegistrosPage from './pages/registros/registros-page.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
@@ -49,8 +48,7 @@ const App = ({ setCurrentUser, currentUser }) => {
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/main' component={MainPage} />
-        <Route path='/registros' component={RegistrosPage} />
+        <Route path='/main' component={MainPage} />        
         <Route 
           exact 
           path='/signin' 

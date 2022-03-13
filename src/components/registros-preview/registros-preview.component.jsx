@@ -1,12 +1,12 @@
 
 import './registros-preview.styles.scss';
 
-const RegistrosPreview = ({ title, options }) => (
+const RegistrosPreview = ({ title, forms }) => (
     <div className='registros-preview'>
         <h1>{title.toUpperCase()}</h1>
         <div className='preview'>
             {
-                options.map(bitacora => 
+                forms.map(bitacora => 
                     <div key={bitacora.id}>{bitacora.name}</div>
                     )
             }
